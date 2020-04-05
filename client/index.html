@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Payment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body onload="updatePage()">
+	<div class="limiter">
+		<div class="container-payment">
+			<div class="wrap-payment">
+				<form class="payment-form validate-form">
+					
+					<span class="form-title p-b-26">
+						Transfer money to:
+					</span>
+					
+					<div align="center">
+						<i class='fas fa-user' style='font-size:66px'></i>
+					</div>
+					
+					<span class="form-user p-b-16" id="user">
+						Mahantesh
+					</span>
+					
+					<div class="wrap-input100 validate-input" data-validate = "Enter amount & Max transfer of 10000">
+						<input class="input100" type="number" id="quantity" name="quantity" min="1" max="10000">
+						<span class="focus-input100" data-placeholder="Amount"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter amount & Max transfer of 10000">
+						<input class="input100" id="reason" name="reason" >
+						<span class="focus-input100" data-placeholder="What's this for?"></span>
+					</div>
+					<button class="button" onClick="payAmount(event)">
+							Transfer
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
